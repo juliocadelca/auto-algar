@@ -23,8 +23,7 @@ class Caminhos:
     def __init__(self):
 
         base_path = os.path.expanduser(r"~/Desktop/Robos/AutoDownloadBases/img") ### Usando os.path.expanduser para garantir que funcione em qualquer máquina
-        
-        self.manual_boletim = r"https://docs.google.com/document/d/1x09s2GnO6r7hODoH6tZRA9zlzfaT0F_v/edit#heading=h.gjdgxs"
+
         self.setinha_exportar = os.path.join(base_path, "SetinhaExportar.png")
         self.login_sales_image = os.path.join(base_path, "LoginSalesIMG.png")
         self.backlog_image = os.path.join(base_path, "BackLogSalesIMG.png")
@@ -421,7 +420,7 @@ def ChatMensalSales():
     except SaidaException:
         return
     
-    caminho = (rf"G:\CSC\Atendimento\Algar\Planejamento\01.BOLETIM\BASES\CHAT\CHAT_LOOKER\{ano_atual_str}-{mes_formatado}-prov_chat_assinc")
+    caminho = (rf"x:\xxx\xxxxx\xxxx\xxxxx\xxxxxx\BASES\CHAT\CHAT_LOOKER\{ano_atual_str}-{mes_formatado}-prov_chat_assinc")
     py.typewrite(caminho), py.sleep(1)
 
     if mes_atual != mes_anterior: # Verifica se o mês atual é diferente do mês anterior
@@ -434,7 +433,7 @@ def EHCTelefone():
     
     py.hotkey("ctrl", "w")
     py.click(x=199, y=56) # Clicando na barra de pesquisa
-    py.typewrite(r'https://lookerstudio.google.com/u/0/reporting/bbdcca5b-e387-4caf-ac84-e45308a0179b/page/p_hg5cs3kecd') # Digitando o endereço da base EHC
+    py.typewrite(r'https://google.com') # Digitando o endereço da base EHC
     py.press('enter')
 
     try:
@@ -483,7 +482,7 @@ def LiveChat():
         return
     
     py.click(x=199, y=56) # Clicando na barra de pesquisa
-    py.typewrite(r'https://lookerstudio.google.com/u/0/reporting/bbdcca5b-e387-4caf-ac84-e45308a0179b/page/p_dtaeqs9zbd') # Digitando o endereço da base LiveChat
+    py.typewrite(r'https://google.com') # Digitando o endereço da base LiveChat
     py.press('enter')
 
     try:
@@ -527,7 +526,7 @@ def LiveChat():
 def ChatAssinc():
     
     py.click(x=199, y=56) # Clicando na barra de pesquisa
-    py.typewrite(r'https://lookerstudio.google.com/u/0/reporting/bbdcca5b-e387-4caf-ac84-e45308a0179b/page/p_ocu83j7edd') # Digitando o endereço da base ChatAssinc
+    py.typewrite(r'https://google.com') # Digitando o endereço da base ChatAssinc
     py.press('enter')
 
     try:
