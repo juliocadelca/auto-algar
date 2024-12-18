@@ -1,2 +1,0 @@
-# auto-algar
-Automações algar
